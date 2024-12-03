@@ -15,8 +15,10 @@ function App() {
       användarnamn: användarnamn,
       lösenord: lösenord
     }  
+    //Some() loopar igenom arrayen och returnerar true om användarnamnet finns i arrayen, annars false
+    const upptaget = användare.some(user => user.användarnamn === användarnamn)
     const updatedUser = [...användare, user]
-    localStorage.setItem('Person', JSON.stringify(updatedUser))
+    !upptaget && localStorage.setItem('Person', JSON.stringify(updatedUser))
     setAnvändare(updatedUser)
     navigate('/')
   }

@@ -1,0 +1,9 @@
+.attGöraDiv{
+    border: 5px solid rgb(95, 0, 0);
+    padding: 0px 25px;
+    margin: 5px;
+}
+
+#knapp{
+    margin-left: 15px;
+}
