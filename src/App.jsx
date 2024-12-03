@@ -20,6 +20,7 @@ function App() {
     const updatedUser = [...användare, user]
     !upptaget && localStorage.setItem('Person', JSON.stringify(updatedUser))
     setAnvändare(updatedUser)
+
     navigate('/')
   }
 
