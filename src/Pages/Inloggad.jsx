@@ -17,7 +17,7 @@ let Inloggad = () => {
 
   let addTodo = () => {
     const updatedTodos = [...todos, newTodo];
-    setTodos(updatedTodos);
+    todos.includes(newTodo) ? alert('Todo finns redan') : setTodos(updatedTodos)
   };
 
   const deleteTodo = (index) => {
